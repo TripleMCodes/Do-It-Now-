@@ -1,0 +1,110 @@
+{% extends 'base.html'%}
+
+{% block title %}
+    Privacy Policy
+{% endblock %}
+
+{% block content %}
+    <div class="container-privacy"> 
+        {% block header %}
+        <div class="privacy-header">
+            <h1 >Privacy Policy</h1>
+            <p><em>Last Updated: September 2025</em></p>
+        </div>
+        {% endblock %}
+        <div class="policy">
+            <section class="intro">
+                <h2>
+                    Introduction
+                </h2>
+                <p>
+                    At <strong>Do It Now</strong>, we respect your privacy. This Privacy Policy explains how we handle you data information when you use our app.
+                    Since ths project was built for learning purposes, please note that no data is sold, rented, or shared with third parties
+                </p>
+            </section>
+
+            <section class="info-collected">
+                <h2>
+                    Information Collected
+                </h2>
+                <ul>
+                    <li><strong>User name And Password:</strong>When creating an account you will be required to provide a username ad a password.</li>
+
+                    <li><strong>Tasks:</strong>Any to-do items you add, edit, or delete within the app.</li>
+
+                    <li><strong>Contact Informationstrong:</strong>
+                    If you use the contact form, we may collect your name, email address, and message.</li>
+
+                    <li><strong>Technical Data:</strong>Basic information such as your browser type IP address may be logged for functionality and security purposes.</li>
+                </ul>
+            </section>
+
+            <section class="info-use">
+                <h2>
+                    How we use your Information
+                </h2>
+
+                <p>
+                    We use the information you provide only to:
+                </p>
+                <ul>
+                    <li>
+                        Deliver the core task management features of the app.
+                    </li>
+                    <li>
+                        Respond to inquiries or feedback sent through the contact form.
+                    </li>
+                    <li>
+                        improve the app experience for users
+                    </li>
+                </ul>
+            </section>
+           
+            <section class="security">
+                <h2>
+                    Data Security
+                </h2>
+                <p>
+                    We take reasonable measures to protect your information. For example, user data maybe stored securely and sensitive information (like passwords, if implemented) would be encrypted. However, please note that this app is primarly a practice project
+                </p>
+            </section>
+
+        <section class="rights">
+                <h2>
+                    Your rights
+                </h2>
+
+                <p>
+                    You may contact us any time to request access to, correction of, or deletion of your personal data.
+                </p>
+        </section>
+
+        <section class="cookies">
+                <h2>
+                    Cookies
+                </h2>
+                <p>
+                    This app may use cookies or sessions to keep you logged in or to improve functionality. No tracking cookies are used for advertising purposes.
+                </p>
+        </section>
+
+        <section class="changes2policy">
+                <h2>
+                    Changes to this policy
+                </h2>
+                <p>
+                    We may update this Privacy Policy from time to  time. Any changes will be posted on this page with "Lasted Updated" date.
+                </p>
+        </section>
+
+        <section class="contactus">
+                <h2>
+                    Contact Us
+                </h2>
+                <p>
+                    If you have any questions about this Privacy Policy, please <a href="{{url_for('contact')}}">contact us.</a>
+                </p>
+        </section>
+        </div>                                        
+    </div>                                     
+{% endblock%}

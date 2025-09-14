@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/about.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/privacy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+</head>
+<body>
+    <div class="nav-container">
+        <div class="user-name">
+            {% if current_user.username %}
+                <h3><p>User: {{current_user.username}}</p></h3>
+            {% else %}
+                <h3>Hello stranger</h3>
+            {% endif %}
+            
+        </div>
+        <nav class="top-nav">
+        <ul>
+            <li class="nav-li"><a href="{{url_for('signup')}}">Sign up</a></li>
+            <li class="nav-li"><a href="{{url_for('login')}}">Log in</a></li>
+            <li class="nav-li"><a href="{{url_for('logout')}}">Log out</a></li>
+        </ul>
+    </nav>
+    </div>
+    
+    
+    {% block content %}
+        {% block header %}
+        {% endblock %}
+    {% endblock %}
+</body>
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; {{current_year}} Do It Now - Stay of top of your tasks</p>
+        <nav>
+            <a href="{{url_for('about')}}">About</a>|
+            <a href="{{url_for('contact')}}">Contact</a>|
+            <a href="{{url_for('privacy')}}">Privacy</a>
+        </nav>
+        <p class="quote">"The best time to start was yesterday. The next best time was also yesterday - So start today."</p>
+    </div>
+</footer>
+</html>

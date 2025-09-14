@@ -1,0 +1,104 @@
+/* Container with subtle background overlay */
+.container-privacy {
+    /* max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem; */
+    font-family: "Lato", sans-serif;
+    color: #2c3e50;
+    background: 
+        linear-gradient(rgba(255, 251, 227, 0.192), rgba(255, 251, 227, 0.219)), /* soft yellow overlay */
+        url("imgs/pexels-mart-production-7718650.jpg") no-repeat center center/cover; /* optional subtle image */
+    /* border-radius: 16px; */
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+/* Header */
+.privacy-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.privacy-header h1 {
+    font-size: 4rem;
+    color: #4a90e2; /* blue accent */
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 0 #fffbea;
+}
+
+.privacy-header p {
+    font-size: 1rem;
+    color: #555;
+    font-style: italic;
+}
+
+/* Policy sections */
+.policy section {
+    background: rgba(255, 255, 255, 0.384); /* slightly transparent to show overlay */
+    border-radius: 16px;
+    padding: 1.8rem 1.5rem;
+    /* margin-bottom: 1.5rem; */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.policy section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* Section headings */
+.policy h2 {
+    color: #4a90e2; /* blue accent */
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    border-left: 5px solid #f9d65c; /* yellow accent bar */
+    padding-left: 0.6rem;
+}
+
+/* Paragraphs */
+.policy p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 0.8rem;
+}
+
+/* Lists */
+.policy ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.policy li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Links */
+.policy a {
+    color: #4a90e2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.policy a:hover {
+    text-decoration: underline;
+    color: #2c3e50;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container-privacy {
+        padding: 1rem;
+    }
+
+    .privacy-header h1 {
+        font-size: 2rem;
+    }
+
+    .policy h2 {
+        font-size: 1.3rem;
+    }
+}

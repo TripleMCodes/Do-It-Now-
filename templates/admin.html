@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard — Do It Now!</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/admin.css') }}">
+</head>
+<body>
+    <div class="h-container">
+        <h1>Admin Dashboard</h1>
+    </div>
+  <main class="admin">
+
+    <section class="user-info">
+      <h2>Users</h2>
+      <p>Total Users: {{ total_users }}</p>
+      <h3>Users Names:</h3>
+      <ul>
+        {% for user in users %}
+          <li>{{ user.username }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section class="tasks-info">
+      <h2>Tasks Overview</h2>
+      <h3>Total tasks</h3>
+        <ul>
+            {% for task in tasks %}
+                <li>{{task}}</li>
+            {% endfor %}
+        </ul>
+        <div class="container">
+            <section class="done">
+                <h3>Completed</h3>
+                {% for task in tasks_done %}
+                    <li>{{task}}</li>
+                {% endfor %}
+            </section>
+            <section class="undone">
+                <h3>Pending</h3>
+                {% for task in tasks_undone %}
+                    <li>{{task}}</li>
+                {% endfor %}
+            </section>
+        </div>
+    </section>
+
+    
+    <section class="messages-container">
+    <h2>Contact Messages</h2>
+      {% for feedback in feedbacks %}
+        <div class="msges">
+            <h4>From: {{feedback[0]}}</h4>
+            <h5>Email: {{feedback[1]}}</h5>
+            <p>{{feedback[2]}}</p>
+        </div>
+      {% endfor %}
+    </section>
+
+    
+    <!-- <section>
+      <h2>Admin Tools</h2>
+      <button onclick="alert('Backup started!')">Backup Database</button>
+      <button onclick="confirm('Are you sure?')">Reset Database</button>
+    </section> -->
+  </main>
+  <footer class="footer">
+    <div class="footer-content">
+        <p>&copy; {{current_year}} Do It Now - Stay of top of your tasks</p>
+        <nav>
+            <a href="{{url_for('about')}}">About</a>|
+            <a href="{{url_for('contact')}}">Contact</a>|
+            <a href="{{url_for('privacy')}}">Privacy</a>
+        </nav>
+        <p class="quote">"The best time to start was yesterday. The next best time was also yesterday - So start today."</p>
+    </div>
+</footer>
+</html>
+</body>
+</html>

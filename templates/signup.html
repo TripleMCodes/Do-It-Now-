@@ -1,0 +1,39 @@
+{% extends 'base.html'%}
+
+{% block title %}
+    Do It Now! - Sign Up
+{% endblock %}
+
+
+
+{% block content %}
+  <div class="container"> 
+     {% block header %}
+    <div class="signup">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <div class="flash-messages">
+                    {% for category, message in messages %}
+                        <div class="alert {{ category }}">{{ message }}</div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+        <h1>Sign Up And Do It Now!</h1>
+    </div>
+    {% endblock %}
+    <section class="signup-page">
+        <div class="form-container">
+            <form action="{{url_for('signup')}}" method="post"><br>
+            <input type="text" name="username" placeholder="Your name"><br>
+            <input type="password" name="password" placeholder="****"><br>
+            <div class="btn"><input type="submit" value="Sign up"></div>
+        </form>
+        </div>
+
+        <h3 class="bottom">have account? <a href="{{url_for('login')}}">Login</a></h3>
+
+    <section>   
+    
+</div>                                     
+{% endblock%}

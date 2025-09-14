@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+<link rel="stylesheet" href="css/index.css">
+{% block title %}
+    Just do it!
+{% endblock %}
+
+{% block content %}
+    
+    <div class="container">
+        <div class="app-logo">
+            <h1>Do It Now!</h1>
+        </div>
+
+        <div id="add-task-container">
+            <input type="text" placeholder="Enter Task" id="input-task">
+            <button id="add-task"><i class="fa-solid fa-plus"></i>
+    </button>
+            </div>
+
+            <div id="task-container">
+                {%if task != []%}
+                    {%for task in tasks%}
+                        <div class="task">
+                            {% if task.status == "done"%}
+                                <li style="text-decoration: line-through;" class="done">{{task}}</li>
+                            {% else %}
+                                <li>{{task}} </li>
+                            {% endif %}
+                            <button class="checkTask">
+                                <i class="fa-solid fa-check"></i>
+                            </button> 
+                            <button class="deleteTask">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </div>
+                    {%endfor%}
+                {%endif%}
+            </div>
+        </div>
+
+        <script src="js/app.js" defer></script>
+{% endblock %}

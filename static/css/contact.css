@@ -1,0 +1,107 @@
+/* Container */
+.container {
+    /* max-width: 700px; */
+    /* margin: 2rem auto; */
+    /* padding: 2rem; */
+    font-family: "Lato", sans-serif;
+    color: #2c3e50;
+}
+
+/* Header */
+.contact-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-header h1 {
+    font-size: 4rem;
+    color: #4a90e2; /* blue accent */
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 0 #fffbea;
+}
+
+.contact-header p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Form Card */
+.contact-form {
+    background: #fffbeab7; /* soft yellow */
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 50%;
+}
+
+.contact-form:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+/* Form Inputs */
+form label {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    display: block;
+    color: #34495e;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74,144,226,0.4);
+}
+
+/* Submit Button */
+form button {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #357ab8;
+    transform: translateY(-2px);
+}
+
+/* Message Box Section */
+.message-box {
+    margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .contact-header h1 {
+        font-size: 2rem;
+    }
+
+    form button {
+        width: 100%;
+        padding: 0.8rem;
+    }
+}

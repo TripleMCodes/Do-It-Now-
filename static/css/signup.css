@@ -1,0 +1,129 @@
+/* Container */
+.container {
+    /* max-width: 500px;
+    margin: 3rem auto;
+    padding: 2rem; */
+    font-family: "Lato", sans-serif;
+    color: #2c3e50;
+}
+
+/* Header */
+.signup {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.signup h1 , .login h1{
+    font-size: 4rem;
+    color: #4a90e2; /* blue accent */
+    text-shadow: 1px 1px 0 #fffbea;
+}
+
+/* Form Card */
+.signup-page{
+    width: 50%;
+    font-size: 3rem;
+}
+.signup-page .form-container {
+    font-size: 3rem;
+    background: #fffbea; /* soft yellow */
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.signup-page .form-container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+/* Inputs */
+.signup-page input[type="text"],
+.signup-page input[type="password"] {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    font-size: 3rem;
+}
+
+.signup-page input[type="text"]:focus,
+.signup-page input[type="password"]:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74,144,226,0.4);
+}
+
+/* Submit Button */
+.signup-page .btn input[type="submit"] {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.signup-page .btn input[type="submit"]:hover {
+    background-color: #357ab8;
+    transform: translateY(-2px);
+}
+
+/* Bottom text */
+.bottom {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 3rem;
+}
+
+.bottom a {
+    color: #4a90e2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.bottom a:hover {
+    text-decoration: underline;
+    color: #357ab8;
+}
+
+.flash-messages {
+  margin: 1rem 0;
+}
+
+.alert {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.alert.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.alert.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+
+/* Responsive */
+@media (max-width: 500px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .signup h1 {
+        font-size: 1.6rem;
+    }
+}

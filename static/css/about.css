@@ -1,0 +1,147 @@
+/* General Layout */
+.about {
+   /* max-width: 900px; 
+   margin: 0 auto; 
+   padding: 2rem;   */
+  font-family: "Lato", sans-serif;
+  color: #2c3e50;
+  background: 
+        linear-gradient(rgba(255, 251, 227, 0.192), rgba(255, 251, 227, 0.219)), /* soft yellow overlay */
+        url("imgs/pexels-mart-production-7718650.jpg") no-repeat center center/cover; /* optional subtle image */
+}
+
+/* Page header */
+.about-page h1 {
+  font-size: 3rem;
+  text-align: center;
+  /* margin-bottom: 2rem; */
+  color: #4a90e2; /* blue accent */
+  text-shadow: 1px 1px 0 #fffbea;
+}
+
+/* Intro (hero style) */
+.intro {
+  text-align: center;
+  background: #fffbea8a; /* light yellow */
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+}
+
+.intro h1 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+  color: #34495e;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #555;
+}
+
+/* Section Styling */
+.about section .abt {
+  background: #ffffff8e;
+  border-radius: 14px;
+  padding: 1.5rem;
+  margin-bottom: 1.8rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about section .abt:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* Section headings */
+.about h2 {
+  color: #4a90e2;
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  border-left: 5px solid #f9d65c; /* yellow accent bar */
+  padding-left: 0.6rem;
+}
+
+/* Paragraphs */
+.about p {
+  color: #444;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .about {
+    padding: 1rem;
+  }
+
+  .about-page h1 {
+    font-size: 2rem;
+  }
+
+  .intro h1 {
+    font-size: 1.6rem;
+  }
+}
+
+
+
+.about .tagline{
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #272727;
+}
+
+.intro, .mission, .features, .story, .intro, .info-collected, .info-use, .security, .rights, .cookies, .change2policy, .contactus, .changes2policy{
+    border: 1px solid rgba(148, 108, 63, 0.842);
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgba(255, 239, 213, 0.527);
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
+}
+
+.info-use ul li, .info-collected ul li{
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+
+
+/* .footer{
+    text-align: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+    font-size: 0.9rem;
+    color:#555;
+    max-height: 5%;
+}
+
+.footer a{
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 .3rem;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.footer .quote{
+    font-style: italic;
+    margin-top: 0.5rem;
+    color: #888;
+} */

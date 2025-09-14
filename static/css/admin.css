@@ -1,0 +1,213 @@
+/* Header */
+body{
+     background: url("imgs/pexels-mart-production-7718650.jpg") no-repeat center center/cover;
+}
+.h-container {
+  background: #4a90e2; /* blue header */
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.h-container h1 {
+  color: #fffbea; /* soft yellow */
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Main admin layout */
+.admin {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: 
+    "u-info t-info"
+    "msg msg";
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  font-family: "Lato", sans-serif;
+}
+
+/* Info Cards */
+.admin section {
+  background: #ffffff83;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+/* Headings */
+.admin h2 {
+  color: #34495e;
+  border-left: 6px solid #4a90e2;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.admin h3 {
+  color: #4a90e2;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* Lists */
+.admin ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.admin li {
+  background: #fffbea70; 
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  font-size: 0.95rem;
+  transition: background 0.2s ease;
+}
+
+.admin li:hover {
+  background: #fff5c2;
+}
+
+/* Tasks container */
+.tasks-info .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+/* Completed vs Pending */
+.done h3 {
+  color: #27ae60; /* green for completed */
+}
+
+.undone h3 {
+  color: #e67e22; /* orange for pending */
+}
+
+/* grid areas */
+.user-info{
+  grid-area: u-info;
+}
+.tasks-info{
+  grid-area: t-info;
+}
+.messages-container{
+  grid-area: msg;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admin {
+    grid-template-columns: 1fr;
+  }
+
+  .tasks-info .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.messages-container {
+  background: #fffbea70; 
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  /* max-width: 800px; */
+  width: 50%;
+  margin: 2rem auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.messages-container h2 {
+  color: #2c3e50; /* dark neutral for contrast */
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #4a90e2; /* blue accent underline */
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.msges {
+  background: #ffffff8c;
+  border-left: 6px solid #4a90e2; /* bold blue accent */
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.msges:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.msges h4 {
+  color: #34495e;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.msges h5 {
+  color: #4a90e2;
+  margin-bottom: 0.6rem;
+  font-weight: 500;
+}
+
+.msges p {
+  color: #555;
+  line-height: 1.5;
+}
+
+
+/* .tasks-info{
+    border: 2px solid #f1b758;
+    background-color: rgba(255, 239, 213, 0.534);
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}  */
+
+.footer{
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+    font-size: 0.9rem;
+    color:#555;
+    max-height: 5%;
+}
+
+.footer a{
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 .3rem;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.footer .quote{
+    font-style: italic;
+    margin-top: 0.5rem;
+    color: #888;
+}
