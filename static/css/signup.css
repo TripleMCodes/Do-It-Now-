@@ -117,13 +117,78 @@
 }
 
 
-/* Responsive */
+/* Responsive*/
 @media (max-width: 500px) {
-    .container {
+    /* .container {
         padding: 1rem;
+    } */
+
+    .signup{
+        margin: .5px;
+        /* max-height: 90vh; */
+    }
+    .signup h1 {
+        font-size: 3rem;
+        /* margin-bottom: 10px; */
     }
 
-    .signup h1 {
-        font-size: 1.6rem;
-    }
+    .signup-page {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .signup-page .form-container {
+    font-size: .5rem;
+    padding: 1rem;
+  }
+
+  .signup-page .form-container input[type="text"],
+  .signup-page input[type="password"] {
+    max-width: 100%;
+    font-size: 1.5rem;
+    padding: 0.8rem 0.6rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .signup-page .btn input[type="submit"] {
+    font-size: .5rem;
+    padding: 0.8rem;
+  }
+
+  .bottom {
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+} 
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  
+   .signup-page .form-container{
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .signup-page .form-container {
+    font-size: .5rem;
+    padding: 1rem;
+  }
+
+  .signup-page .form-container input[type="text"],
+  .signup-page input[type="password"] {
+    max-width: 100%;
+    font-size: 1.5rem;
+    padding: 0.8rem 0.6rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .signup-page .btn input[type="submit"] {
+    font-size: .5rem;
+    padding: 0.8rem;
+  }
+
+  .bottom {
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+
 }

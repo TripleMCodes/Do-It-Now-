@@ -223,19 +223,252 @@ input {
   text-shadow: 1px 1px 0 #fffbea;
 }
 
-/* .signup,
-.login,
-.app-logo {
-  font-size: 2rem;
-  padding-top: 2rem;
-  -webkit-text-stroke: 2px rgb(248, 195, 115);
-  text-shadow: 1px 1px 0 #2c2c2b;
-  color: #fff;
-  text-shadow: 0 2.5px 6.5px rgba(0, 0, 0, 0.3);
-  margin-top: 0;
-  margin-bottom: 8rem;
-} */
-
 .bottom {
   margin: 2rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 393px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.3rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .user-name {
+    text-align: center;
+    white-space: normal;
+    font-size: 1rem;
+  }
+
+  .user-name h3 {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  .top-nav ul {
+    justify-content: center;
+    gap: 0.2rem;
+    flex-wrap: wrap;
+  }
+
+  .nav-li a {
+    padding: 0.3rem 0.4rem;
+    font-size: 0.9rem;
+  }
+
+  .container {
+    padding: 0.8rem;
+  }
+
+  .app-logo {
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+  }
+
+  #add-task-container {
+    max-width: 100%;
+    padding: 0.4rem;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  #input-task {
+    max-width: 100%;
+    font-size: 1rem;
+    padding: 0.4rem 0.4rem;
+  }
+
+  input {
+    font-size: 2rem;
+    padding: 0.4rem 0.4rem;
+  }
+
+  #add-task {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  #task-container {
+    width: 100%;
+    max-height: 350px;
+    padding: 0.6rem;
+  }
+
+  .task {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.4rem;
+    padding: 0.4rem;
+    height: auto;
+  }
+
+  .task li {
+    font-size: 1rem;
+    margin-right: 0;
+    word-wrap: break-word;
+  }
+
+  .task button {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.9rem;
+    margin: 0.2rem;
+  }
+
+  .footer {
+    font-size: 0.75rem;
+    padding: 0.6rem;
+  }
+
+  .footer nav {
+    font-size: 0.75rem;
+  }
+
+  .footer .quote {
+    font-size: 0.7rem;
+    margin-top: 0.3rem;
+  }
+}
+
+/* Mobile first: phones (401px - 600px) */
+@media (min-width: 401px) and (max-width: 600px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .user-name {
+    text-align: center;
+    white-space: normal;
+    font-size: 1.4rem;
+  }
+
+  .top-nav ul {
+    justify-content: center;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+  }
+
+  .nav-li a {
+    padding: 0.4rem 0.6rem;
+    font-size: 1.2rem;
+  }
+
+  #add-task-container {
+    max-width: 100%;
+    padding: 0.6rem;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  #input-task{
+    max-width: 100%;
+    font-size: 2.2rem;
+  }
+
+  input {
+    font-size: 1rem;
+    padding: 0.5rem 0.6rem;
+    max-width: 100%;
+  } 
+
+  #add-task {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 1.4rem;
+  }
+
+  #task-container {
+    width: 100%;
+    max-height: none;
+    padding: 0.8rem;
+    /* display: flex;
+    flex-direction: row; */
+  }
+
+  .task {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.6rem;
+    padding: 0.6rem;
+  }
+
+  .task li {
+    font-size: 1.4rem;
+    margin-right: 0;
+  }
+
+  .task button {
+    padding: 0.35rem 0.5rem;
+    font-size: 1.4rem;
+  }
+
+  .app-logo{
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .signup,
+  .login,
+  .about {
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
+
+  .signup-page {
+    width: 95%;
+    font-size: 1.6rem;
+  }
+
+  .signup-page .form-container {
+    font-size: 1.6rem;
+    padding: 1.2rem;
+  }
+
+  .signup-page input[type="text"],
+  .signup-page input[type="password"] {
+    font-size: 1.2rem;
+    padding: 0.8rem 0.6rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .signup-page .btn input[type="submit"] {
+    font-size: 1.4rem;
+    padding: 0.8rem;
+  }
+
+  .bottom {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+  }
+}
+
+/* Tablet / small desktop */
+@media (min-width: 601px) and (max-width: 1024px) {
+  #add-task-container {
+    max-width: 100%; 
+  }
+
+  #task-container {
+    width: 100%;
+    max-height: 600px;
+  }
+
+
+  input { font-size: 2rem; }
+  .task li { font-size: 1.8rem; }
+  .app-logo { font-size: 3.2rem; }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+  #add-task-container { max-width: 90%; }
+  #task-container { width: 90%; }
+  .container { padding: 3rem; }
+  input { font-size: 3.5rem; }
+  .task li { font-size: 2.2rem; }
 }

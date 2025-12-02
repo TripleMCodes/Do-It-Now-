@@ -105,3 +105,14 @@ form button:hover {
         padding: 0.8rem;
     }
 }
+
+
+@media (max-width: 500px){
+    .contact-form{
+        max-width: 100%;
+    }
+
+    .contact-form input {
+        width: 100%;
+    }
+}
