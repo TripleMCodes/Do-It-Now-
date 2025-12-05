@@ -4,6 +4,8 @@ Flask-Migrate>=3.0
 Flask-Login>=0.6
 Flask-Bcrypt>=1.0
 Werkzeug>=2.0
+gunicorn
+
 
 # Optional / dev
 python-dotenv>=0.21

@@ -1,6 +1,3 @@
 from app import create_app
 
 todo_app = create_app()
-
-if __name__ == '__main__':
-    todo_app.run(debug=True, host="0.0.0.0", port=5000)
